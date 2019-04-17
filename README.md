@@ -8,9 +8,9 @@ A simple usage example is this:
 ```python
 from inject_globals import inject_globals
 
-@inject_globals(A = "Hello", B = "World")
+@inject_globals(a = "Hello", b = "World")
 def hello():
-    print(f"{A} {B}")
+    print(f"{a} {b}")
 
 hello()
 ```

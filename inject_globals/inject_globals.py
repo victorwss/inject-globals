@@ -46,21 +46,3 @@ def inject_globals(__do_not_use_this_parameter = None, **globals):
     if callable(__do_not_use_this_parameter):
         return middle(__do_not_use_this_parameter)
     raise Exception("Bad usage for inject_globals")
-
-@inject_globals(A = "Hello", B = "World")
-def hello():
-    print(f"{A} {B}")
-
-@inject_globals()
-def hello2():
-    print("ok")
-
-@inject_globals
-def hello3():
-    print("ok")
-
-hello()
-hello2()
-hello3()
-
-help(inject_globals)

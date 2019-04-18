@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="inject-globals",
-    version="1.0.0.3",
+    version="1.0.0.4",
     author="Victor Williams Stafusa da Silva",
     author_email="victorwssilva@gmail.com",
     description="A decorator for injecting global variables into function calls.",
